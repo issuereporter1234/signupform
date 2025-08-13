@@ -1,0 +1,29 @@
+/*
+ button color: #596D48 
+ inputs: #E5E7EB
+*/
+body{
+   margin: 0;
+   padding: 0;
+}
+@font-face{
+    src: url(fonts/Norse-Bold.otf);
+    font-family: norseBold;
+    
+ }
+
+div.logo-container{
+   background-image: url(imgs/photo-1585202900225-6d3ac20a6962.avif);
+   background-repeat: no-repeat;
+   height: 100vh;
+   display: flex;
+   
+   
+}
+#odin-logo{
+   height: 150px;
+}
+ h1{
+    font-family: norseBold;
+    color: white;
+ }
