@@ -5,6 +5,7 @@
 body{
    margin: 0;
    padding: 0;
+   display: flex;
 }
 @font-face{
     src: url(fonts/Norse-Bold.otf);
@@ -12,18 +13,31 @@ body{
     
  }
 
-div.logo-container{
+.logo-container{
    background-image: url(imgs/photo-1585202900225-6d3ac20a6962.avif);
-   background-repeat: no-repeat;
-   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover; /* ovo čini da slika uvek pokrije kontejner */
+  background-position: center;
+  width: 33.33vw;
+  height: 100vh;
+  position: relative;
+
+}
+.logo{
    display: flex;
-   
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   width: 100%;
+   top: 20%;
    
 }
+
 #odin-logo{
-   height: 150px;
+   height: 110px;
 }
  h1{
     font-family: norseBold;
     color: white;
+    font-size: 110px;
  }
