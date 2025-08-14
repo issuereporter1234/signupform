@@ -14,12 +14,53 @@
         </div>
     </div>
 
-    <div>
+    <div class="regisration-container">
         <div class="content">
             This is not a real online service! You know you need something 
             like this in your life to help you realize your deepest dreams.
-            Sign up <span>now</span> to get started.
-            you <span>know</span> you want to.
+            Sign up <span class="italic">now</span> to get started.
         </div>
+        <div class="content">You <span class="italic">know</span> you want to.</div>
+        <div class="sign-up">
+            <div class="bold">Let's do this</div>
+            <form action="https://httpbin.org/post" method="post" id="sign-up">
+                <div id="inputs">
+                    <div class="input-cont">
+                        <label for="first-name">FIRST NAME</label>
+                        <br>
+                        <input type="text" name="first-name" id="first-name" value="Thor" required>
+                    </div>
+                    <div class="input-cont">
+                        <label for="last-name">LAST NAME</label>
+                        <br>
+                        <input type="text" name="last-name" id="last-name" value="Odinson" required>
+                    </div>
+                    <div class="input-cont">
+                        <label for="email" >EMAIL</label>
+                        <br>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input-cont">
+                        <label for="phone">PHONE NUMBER</label>
+                        <br>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div class="input-cont">
+                        <label for="password">PASSWORD</label>
+                        <br>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="input-cont">
+                        <label for="conf-password">CONFIRM PASSWORD</label>
+                        <br>
+                        <input type="password" name="conf-password" id="conf-password" required> 
+                    </div>
+                </div>
+               <!--  <button type="submit">Create Account</button> -->
+            </form>
+            
+        </div>
+        <button id="submit" type="submit" form="sign-up">Create Account</button>
+        <div class="login">Alredy have an account? <a href="#">Log in</a></div>
     </div>
 </html>

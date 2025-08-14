@@ -2,10 +2,15 @@
  button color: #596D48 
  inputs: #E5E7EB
 */
+*{
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body{
    margin: 0;
    padding: 0;
    display: flex;
+   height: 100vh;
+
 }
 @font-face{
     src: url(fonts/Norse-Bold.otf);
@@ -19,18 +24,24 @@ body{
   background-size: cover; /* ovo čini da slika uvek pokrije kontejner */
   background-position: center;
   width: 33.33vw;
+  min-width: 300px;
   height: 100vh;
   position: relative;
+  
 
 }
 .logo{
    display: flex;
    justify-content: center;
    align-items: center;
+   padding: 20px auto;
    position: absolute;
    width: 100%;
    top: 20%;
-   
+   background-color: rgba(0, 0, 0, 0.5);
+}
+h1, img{
+   margin: 20px 0px;
 }
 
 #odin-logo{
@@ -41,3 +52,81 @@ body{
     color: white;
     font-size: 110px;
  }
+
+.regisration-container{
+   margin: 0;
+   padding: 0;
+   height: 100vh;
+   background-color: rgb(248, 246, 246);
+}
+
+div.content{
+   font-weight: bold;
+   margin: 100px 20px 20px;
+   padding: auto;
+}
+.content:nth-of-type(2) {
+margin-top: 20px;  
+
+}
+
+.italic{
+   font-style: italic;
+}
+.bold{
+   font-weight: bold;
+}
+
+.sign-up{
+   background-color: white;
+   margin-top: 100px;
+   padding: 40px;
+   box-shadow: 0px 5px 5px  rgba(0, 0, 0, 0.1);
+
+}
+#inputs{
+    display: grid;
+  grid-template-columns: auto auto;
+  
+}
+
+.input-cont{
+   margin: 10px;
+}
+
+label{
+   color: rgb(94, 93, 93);
+   font-size: 9.5px;
+}
+input{
+   padding: 3.5px;
+   border-radius: 4px;
+   border: 1px solid;
+}
+
+input:focus{
+   border: 1px solid blue !important;
+   outline: none;
+}
+input[type="password"]:invalid{
+   border: 1px solid red;
+}
+
+button#submit{
+   padding: 10px 40px;
+   background-color: #596D48;
+   color: white;
+   font-weight: bold;
+   border-radius: 5px;
+   margin: 20px;
+   border: 0;
+}
+.login{
+  margin: 20px;
+}
+a{
+   color: #596D48;
+   font-weight: bold;
+   text-decoration: none;
+   
+}
